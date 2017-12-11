@@ -6,7 +6,6 @@ creator:
 - role: author
   text: Pierre-Henry Soria
 description: Build a powerful RESTful API from scratch with PHP 7+ and TDD
-rights: Commercial
 language: en-GB
 stylesheet: epub.css
 cover-image: cover.jpg
