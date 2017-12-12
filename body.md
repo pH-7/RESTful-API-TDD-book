@@ -32,12 +32,24 @@ Finally, writing your unit tests, will make you writing class better and cleaner
 
 # What are Endpoints?
 
-An API Endpoint is a unique URI which represents an object (the resource) of the API and accessed by a client application from a HTTP request.
+An API Endpoint is a unique URI which represents an object (the resource) of the API and accessed by a client application from an HTTP request.
+
+
+## Available HTTP Methods
+
+Below are the available HTTP methods we have to communicate with our REST API.
+
+* **GET** - for retrieving data from the API.
+* **POST** - for adding new resources (or updating them).
+* **PUT** - for updating resources (in most cases, it is wiser to use POST or PATCH instead of PUT).
+* **PATCH** - for updating partially a resource.
+* **DELETE** - for deleting resources.
+* **OPTIONS** - for providing context about the resources.
 
 
 ## Creating our First Endpoints
 
-Since we use TDD principles in mind, we will first add the unit test.
+Since we use TDD principles in mind, we will first add the unit tests before coding our first functions.
 
 We will use Guzzle composer package to help us making HTTP request over the server and verify the HTTP code status.
 
