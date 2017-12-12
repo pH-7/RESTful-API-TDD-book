@@ -27,12 +27,12 @@ Writing your tests before coding the app, also helps you to have a proper code t
 
 If you write the unit tests after, you might sometimes instance objects in your class (constructor for instance) and won't use dependency injection, which and you end up with a spagethii code that is not testable.
 
-Finally, writing your unit tests, will make you writing class cleaner, with better method names and a nicer architecture in general.
+Finally, writing your unit tests, will make you writing class better and cleaner, with better method names and a nicer architecture in general. It will also decrease bugs.
 
 
 # What are Endpoints?
 
-An API Endpoint represents each resource from
+An API Endpoint is a unique URI which represents an object (the resource) of the API and accessed by a client application from a HTTP request.
 
 
 ## Creating our First Endpoints
