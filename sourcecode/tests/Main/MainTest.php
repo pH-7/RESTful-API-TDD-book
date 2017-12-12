@@ -15,7 +15,10 @@ class MainTest extends TestCase
 
     protected function setUp()
     {
-        $this->oClient = new Client(['base_uri' => self::ROOT_URL, 'exceptions' => false]);
+        $this->oClient = new Client([
+            'base_uri' => self::ROOT_URL,
+            'exceptions' => false]
+        );
     }
 
     public function testTestEndpoint(): void

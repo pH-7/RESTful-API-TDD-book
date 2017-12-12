@@ -73,7 +73,10 @@ class MainTest extends TestCase
 
     protected function setUp()
     {
-        $this->oClient = new Client(['base_uri' => 'http://localhost/rest-book/', 'exceptions' => false]);
+        $this->oClient = new Client([
+            'base_uri' => 'http://localhost/rest-book/',
+            'exceptions' => false]
+        );
     }
 
     public function testTestEndpoint(): void
