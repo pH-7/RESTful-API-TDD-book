@@ -88,3 +88,9 @@ class MainTest extends TestCase
     }
 }
 ```
+
+
+The test makes sure the "test" endpoint returns "It Works!" with the HTTP status code "200".
+If this isn't the case, the test will fail.
+
+Since we haven't implement the "test" endpoint yet, the test will fail for now.
