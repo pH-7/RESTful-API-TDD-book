@@ -30,6 +30,13 @@ If you write the unit tests after, you might sometimes instance objects in your 
 Finally, writing your unit tests, will make you writing class better and cleaner, with better method names and a nicer architecture in general. It will also decrease bugs.
 
 
+# REST API is Stateless!
+
+A REST API can't remember what happened from the previous request, no server-side sessions.
+
+It has to be stateless and can't remember any history from any previous requests
+
+
 # What are Endpoints?
 
 An API Endpoint is a unique URI which represents an object (the resource) of the API and accessed by a client application from an HTTP request.
