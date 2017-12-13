@@ -3,7 +3,7 @@
 ## With PHP 7.2 and TDD
 
 
-#### We will learn, step-by-step, how to build a powerful RESTful API with PHP 7 and TDD from scratch.
+#### We will learn, step-by-step, how to build a powerful RESTful API with PHP 7 and TDD from scratch. We will use MVC pattern for our web application architecture.
 
 **You will be able to use the API that we will build together in this book, for your next SaaS or your new startup idea.**
 
@@ -25,7 +25,7 @@ Thanks TDD, it makes sure your project is tested. Most of the time, you first cr
 
 Writing your tests before coding the app, also helps you to have a proper code that can be tested.
 
-If you write the unit tests after, you might sometimes instance objects in your class (constructor for instance) and won't use dependency injection, which and you end up with a spagethii code that is not testable.
+If you write the unit tests after, you might sometimes instance objects in your class (constructor for instance) and won't use dependency injection, which and you end up with a spaghetti code that is not testable.
 
 Finally, writing your unit tests, will make you writing class better and cleaner, with better method names and a nicer architecture in general. It will also decrease bugs.
 
@@ -94,3 +94,39 @@ The test makes sure the "test" endpoint returns "It Works!" with the HTTP status
 If this isn't the case, the test will fail.
 
 Since we haven't implement the "test" endpoint yet, the test will fail for now.
+
+Please also note that we use the PHPUnit `assertSame()` method and not `assertEquals()`.
+The reason is that assertSame() makes sure the type is the same and avoid potential bugs. In other worlds, `assertSame()` is equivalent to `===` and `assertEquals()` is equivalent to `==`. It's always a good idea to use the strict comparisons as much as you can.
+
+
+## Implement our #1 Endpoint
+
+
+We will create our first class in `/src/Main/Main.php` file.
+
+
+Below is our controller of the first "test" endpoint that will help us to ping it in order to know if the API is working.
+
+```PHP
+declare(strict_types=1);
+
+namespace RESTBook\Main;
+
+class Main
+{
+    public function __construct()
+    {
+        header('Content-Type: application/json');
+    }
+
+    public function test(): void
+    {
+        echo $this->convertToJson(['return' => 'It Works!'])
+    }
+
+    private function convertToJson(array $value): string
+    {
+        return json_encode($value);
+    }
+}
+```
