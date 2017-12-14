@@ -2,7 +2,7 @@
 
 ## With PHP 7.2 and TDD
 
-**REST Book** is an open source manual that techs you how to build a powerful RESTful API from scratch with PHP 7.2 and TDD
+**REST Book** is an open source manual that teaches you how to build a powerful RESTful API from scratch with PHP 7.2 and TDD
 
 
 ## The Author
