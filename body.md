@@ -44,7 +44,7 @@ An API Endpoint is a unique URI which represents an object (the resource) of the
 
 ## Available HTTP Methods
 
-Below are the available HTTP methods we have to communicate with our REST API.
+Below are the principle HTTP methods we have to communicate with our REST API.
 
 * **GET** - for retrieving data from the API.
 * **POST** - for adding new resources (or updating them).
@@ -137,3 +137,16 @@ class Main
     }
 }
 ```
+
+
+# Post a data to your API
+
+In this chapter, we will make our first request to our API.
+
+We will send an article with its title, body. Finally, we will create another endpoint to update the article ID. For updating it, we will also send the article ID to specify what article we want to update.
+
+When we send data to our API, a good practice is to send all data through a JSON object.
+
+In some cases (when we update the Article data for instance), you can send the article ID as a 'application/x-www-urlformencoded' POST field.
+
+However, here, we will send the ID through the body as a JSON format (and I usually recommend this practice).
