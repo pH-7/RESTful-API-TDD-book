@@ -7,7 +7,7 @@
 
 ## 📚 Book Body
 
-**[https://github.com/pH-7/RESTful-API-TDD-book/blob/master/body.md](Read Here)**. Still in WIP.
+**[Read Here](https://github.com/pH-7/RESTful-API-TDD-book/blob/master/body.md)**. Still in WIP.
 
 
 ## ✍ Author
