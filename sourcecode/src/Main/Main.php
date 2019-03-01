@@ -13,7 +13,7 @@ class Main
 
     public function test(): void
     {
-        echo $this->convertToJson(['return' => 'It Works!'])
+        echo $this->convertToJson(['return' => 'It Works!']);
     }
 
     private function convertToJson(array $value): string
