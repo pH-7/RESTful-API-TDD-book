@@ -149,4 +149,6 @@ When we send data to our API, a good practice is to send all data through a JSON
 
 In some cases (when we update the Article data for instance), you can send the article ID as a 'application/x-www-urlformencoded' POST field.
 
-However, here, we will send the ID through the body as a JSON format (and I usually recommend this practice).
+However, here, we will send the ID through the payload as a JSON format (and I usually recommend this practice).
+
+Note, the term "*payload*" in the API jargon doesn't include headers and meta data info. In short, the payload is the "wrapper" to the API "*body*"
